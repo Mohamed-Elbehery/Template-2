@@ -77,7 +77,7 @@ const darkModeChanges = () => {
     })
     btn.addEventListener('mouseleave', () => {
       btn.style.color = 'white';
-      btn.style.backgroundColor = 'black';
+      btn.style.backgroundColor = 'transparent';
     })
   });
   header.children[0].children[1].children[0].addEventListener('mouseenter', () => {
@@ -102,8 +102,8 @@ const lightModeChanges = () => {
       btn.style.backgroundColor = 'black';
     })
     btn.addEventListener('mouseleave', () => {
-      btn.style.color = 'white';
-      btn.style.backgroundColor = 'black';
+      btn.style.color = 'black';
+      btn.style.backgroundColor = 'transparent';
     })
   });
   header.children[0].children[1].children[0].addEventListener('mouseenter', () => {

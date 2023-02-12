@@ -283,3 +283,7 @@ footer p {
 footer .btns .btn {
   color: gray;
 }
+
+footer .btns .btn:hover {
+  color: white;
+}

@@ -1,7 +1,7 @@
 /*! Variables */
 :root {
   --primary-color: rgb(87, 114, 236);
-  --secondary-color: rgb(19, 47, 172);
+  --secondary-color: rgb(71, 93, 194);
   --gray-color: #413f3f;
   --section-padding-x: 4%;
   --section-padding-y: 1%;
@@ -333,4 +333,24 @@ footer .btns .btn {
 
 footer .btns .btn:hover {
   color: white;
+}
+/* Up Button */
+#up {
+  position: fixed;
+  color: white;
+  font-size: 1.5rem;
+  background-color: var(--primary-color);
+  bottom: 20px;
+  right: 20px;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  transition: var(--transition-duration);
+}
+
+#up:hover {
+  background-color: var(--secondary-color);
+}
+
+#up:active {
+  background-color: var(--primary-color);
 }

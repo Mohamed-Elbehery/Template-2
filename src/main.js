@@ -20,27 +20,22 @@ const intro = document.querySelector('.intro');
 const ourWork = document.querySelector('.our-work');
 const services = document.querySelector('.services');
 const footer = document.querySelector('footer');
+const goUp = document.querySelector('#up');
 
-window.onload = () => {
+const applyingAnimations = () => {
   if(window.pageYOffset >= landingSection.offsetTop) {
     landingSection.style.opacity = 1;
     landingSection.style.transform = 'translateY(0)';
-  }
-}
-
-
-window.addEventListener('scroll', () => {
-  if(window.pageYOffset >= landingSection.offsetTop) {
-    landingSection.style.opacity = 1;
-    landingSection.style.transform = 'translateY(0)';
+    goUp.style.display = 'none';
   }
   
   if(window.pageYOffset >= intro.offsetTop - 150) {
     intro.style.opacity = 1;
     intro.style.transform = 'translateY(0)';
+    goUp.style.display = 'block';
   }
 
-  if(window.pageYOffset >= ourWork.offsetTop - 475) {
+  if(window.pageYOffset >= ourWork.offsetTop - 200) {
     ourWork.style.opacity = 1;
     ourWork.style.transform = 'translateY(0)';
   }
@@ -54,7 +49,20 @@ window.addEventListener('scroll', () => {
     footer.style.opacity = 1;
     footer.style.transform = 'translateY(0)';
   }
+}
+
+window.onload = () => {
+  applyingAnimations();
+}
+
+
+window.addEventListener('scroll', () => {
+  applyingAnimations();
 })
+
+goUp.addEventListener('click', () => {
+  window.scroll(0, 0);
+});
 
 //! Dark and Light Mode
 const lightMode = document.querySelector('.light-mode');

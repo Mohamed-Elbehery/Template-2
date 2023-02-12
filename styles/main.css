@@ -1,6 +1,6 @@
 /*! Variables */
 :root {
-  --primary-color: rgb(40, 74, 226);
+  --primary-color: rgb(87, 114, 236);
   --secondary-color: rgb(19, 47, 172);
   --gray-color: #413f3f;
   --section-padding-x: 4%;
@@ -20,6 +20,10 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  transition: var(--transition-duration);
 }
 
 a {
@@ -113,9 +117,14 @@ header .right-side .theme {
 }
 
 header .right-side .theme i {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   cursor: pointer;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
+  color: var(--primary-color);
+}
+
+header .right-side .theme i:active {
+  color: var(--secondary-color);
 }
 /* Landing Styles */
 .landing {

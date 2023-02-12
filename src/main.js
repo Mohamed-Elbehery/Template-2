@@ -4,6 +4,7 @@ let counter = document.querySelector('.counter span')
 //! Saving the number to dispaly it after refreshing the page
 setInterval(() => {
   if(!localStorage.counter) {
+    counter.innerHTML = 10000;
     counter.innerHTML = +counter.innerHTML + 1;
     localStorage.setItem('counter', counter.innerHTML);
   } else {
@@ -13,6 +14,7 @@ setInterval(() => {
 }, 1000)
 
 //! Sections Animations
+const header = document.querySelector('header');
 const landingSection = document.querySelector('.landing');
 const intro = document.querySelector('.intro');
 const ourWork = document.querySelector('.our-work');
@@ -53,3 +55,75 @@ window.addEventListener('scroll', () => {
     footer.style.transform = 'translateY(0)';
   }
 })
+
+//! Dark and Light Mode
+const lightMode = document.querySelector('.light-mode');
+const darkMode = document.querySelector('.dark-mode');
+const primaryBtn = document.querySelectorAll('.btn-primary');
+const landingTitle = document.querySelector('.landing-content h2');
+
+// applying the dark mode
+const darkModeChanges = () => {
+  localStorage.theme = 'dark';
+  document.body.style.backgroundColor = '#333';
+  document.body.style.color = 'white';
+  landingTitle.style = 'color: white; transition: var(--section-transition-duration);';
+  primaryBtn.forEach((btn) => {
+    btn.style.color = 'white';
+    btn.style.borderColor = 'white';
+    btn.addEventListener('mouseenter', () => {
+      btn.style.color = 'black';
+      btn.style.backgroundColor = 'white';
+    })
+    btn.addEventListener('mouseleave', () => {
+      btn.style.color = 'white';
+      btn.style.backgroundColor = 'black';
+    })
+  });
+  header.children[0].children[1].children[0].addEventListener('mouseenter', () => {
+    header.children[0].children[1].children[0].style.color = 'white';
+  })
+
+  header.children[0].children[1].children[0].addEventListener('mouseleave', () => {
+    header.children[0].children[1].children[0].style.color = 'rgb(87, 114, 236)';
+  })
+};
+
+const lightModeChanges = () => {
+  localStorage.theme = 'light';
+  document.body.style.backgroundColor = 'transparent';
+  document.body.style.color = 'black';
+  landingTitle.style = 'color: #413f3f; transition: var(--section-transition-duration);';
+  primaryBtn.forEach((btn) => {
+    btn.style.color = 'black';
+    btn.style.borderColor = 'black';
+    btn.addEventListener('mouseenter', () => {
+      btn.style.color = 'white';
+      btn.style.backgroundColor = 'black';
+    })
+    btn.addEventListener('mouseleave', () => {
+      btn.style.color = 'white';
+      btn.style.backgroundColor = 'black';
+    })
+  });
+  header.children[0].children[1].children[0].addEventListener('mouseenter', () => {
+    header.children[0].children[1].children[0].style.color = 'white';
+  })
+
+  header.children[0].children[1].children[0].addEventListener('mouseleave', () => {
+    header.children[0].children[1].children[0].style.color = 'rgb(87, 114, 236)';
+  })
+}
+
+if(localStorage.theme) { // If there is a theme in local storage
+  if(localStorage.theme === 'dark') { // Dark Mode
+    darkModeChanges();
+  } else { // Light Mode
+    lightModeChanges();
+  }
+} else { // If there is no theme in the local storage
+  localStorage.setItem('theme', 'light');
+}
+
+darkMode.addEventListener('click', darkModeChanges);
+lightMode.addEventListener('click', lightModeChanges);

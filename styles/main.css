@@ -340,8 +340,8 @@ footer .btns .btn:hover {
   color: white;
   font-size: 1.5rem;
   background-color: var(--primary-color);
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  right: 30px;
   border-radius: 10px;
   padding: 0.5rem 1rem;
   transition: var(--transition-duration);

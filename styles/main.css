@@ -130,7 +130,7 @@ header .right-side .theme i:active {
 .landing {
   opacity: 0;
   transition: var(--section-transition-duration);
-  transform: translateY(-125px);
+  transform: translateY(-150px);
 }
 
 .landing .landing-content {
@@ -169,7 +169,7 @@ header .right-side .theme i:active {
   justify-content: space-around;
   opacity: 0;
   transition: var(--section-transition-duration);
-  transform: translateY(-125px);
+  transform: translateY(-150px);
 }
 
 .intro .intro-img {
@@ -210,7 +210,7 @@ header .right-side .theme i:active {
   justify-content: center;
   opacity: 0;
   transition: var(--section-transition-duration);
-  transform: translateY(-125px);
+  transform: translateY(-150px);
 }
 
 .our-work .content {
@@ -255,7 +255,7 @@ header .right-side .theme i:active {
   height: 50vh;
   opacity: 0;
   transition: var(--section-transition-duration);
-  transform: translateY(-125px);
+  transform: translateY(-150px);
 }
 
 .services .title {
@@ -314,7 +314,7 @@ footer {
   align-items: center;
   transition: var(--section-transition-duration);
   opacity: 0;
-  transform: translateY(-125px);
+  transform: translateY(-150px);
 }
 
 footer h2 {

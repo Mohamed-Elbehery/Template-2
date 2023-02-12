@@ -261,9 +261,9 @@ header nav button.btn:active {
   align-self: flex-start;
   margin-bottom: 1rem;
 }
-
+/* Footer Styles */
 footer {
-  height: 20vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

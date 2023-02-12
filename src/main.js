@@ -1,9 +1,18 @@
+//! Counter
 let counter = document.querySelector('.counter span')
 
+//! Saving the number to dispaly it after refreshing the page
 setInterval(() => {
-  counter.innerHTML = 1 + +counter.innerHTML;
+  if(!localStorage.counter) {
+    counter.innerHTML = +counter.innerHTML + 1;
+    localStorage.setItem('counter', counter.innerHTML);
+  } else {
+    counter.innerHTML = +localStorage.counter + 1;
+    localStorage.setItem('counter', counter.innerHTML);
+  }
 }, 1000)
 
+//! Sections Animations
 const landingSection = document.querySelector('.landing');
 const intro = document.querySelector('.intro');
 const ourWork = document.querySelector('.our-work');

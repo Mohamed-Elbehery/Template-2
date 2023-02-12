@@ -102,6 +102,7 @@ header nav button.btn:active {
 .landing {
   opacity: 0;
   transition: var(--section-transition-duration);
+  transform: translateY(-100px);
 }
 
 .landing .landing-content {
@@ -140,6 +141,7 @@ header nav button.btn:active {
   justify-content: space-around;
   opacity: 0;
   transition: var(--section-transition-duration);
+  transform: translateY(-100px);
 }
 
 .intro .intro-img {
@@ -180,6 +182,7 @@ header nav button.btn:active {
   justify-content: center;
   opacity: 0;
   transition: var(--section-transition-duration);
+  transform: translateY(-100px);
 }
 
 .our-work .content {
@@ -224,6 +227,7 @@ header nav button.btn:active {
   height: 50vh;
   opacity: 0;
   transition: var(--section-transition-duration);
+  transform: translateY(-100px);
 }
 
 .services .title {
@@ -282,6 +286,7 @@ footer {
   align-items: center;
   transition: var(--section-transition-duration);
   opacity: 0;
+  transform: translateY(-100px);
 }
 
 footer h2 {

@@ -13,27 +13,36 @@ const footer = document.querySelector('footer');
 window.onload = () => {
   if(window.pageYOffset >= landingSection.offsetTop) {
     landingSection.style.opacity = 1;
+    landingSection.style.transform = 'translateY(0)';
   }
 }
 
 window.addEventListener('scroll', () => {
   if(window.pageYOffset >= landingSection.offsetTop) {
     landingSection.style.opacity = 1;
+    landingSection.style.transform = 'translateY(0)';
+
   }
   
-  if(window.pageYOffset >= intro.offsetTop - 200) {
+  if(window.pageYOffset >= intro.offsetTop - 350) {
     intro.style.opacity = 1;
+    intro.style.transform = 'translateY(0)';
+
   }
 
-  if(window.pageYOffset >= ourWork.offsetTop - 400) {
+  if(window.pageYOffset >= ourWork.offsetTop - 375) {
     ourWork.style.opacity = 1;
+    ourWork.style.transform = 'translateY(0)';
+
   }
 
-  if(window.pageYOffset >= services.offsetTop - 800) {
+  if(window.pageYOffset >= services.offsetTop - 700) {
     services.style.opacity = 1;
+    services.style.transform = 'translateY(0)';
   }
 
   if(window.pageYOffset >= footer.offsetTop - 800) {
     footer.style.opacity = 1;
+    footer.style.transform = 'translateY(0)';
   }
 })

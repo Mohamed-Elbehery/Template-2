@@ -35,16 +35,25 @@ const applyingAnimations = () => {
     intro.style.transform = 'translateY(0)';
     goUp.style.pointerEvents = 'visible';
     goUp.style.opacity = '1';
+    // resetting landing section
+    landingSection.style.opacity = 0;
+    landingSection.style.transform = 'translateY(200px)';
   }
 
   if(window.pageYOffset >= ourWork.offsetTop - 200) {
     ourWork.style.opacity = 1;
     ourWork.style.transform = 'translateY(0)';
+    // resetting landing section
+    intro.style.opacity = 0;
+    intro.style.transform = 'translateY(200px)';
   }
 
   if(window.pageYOffset >= services.offsetTop - 650) {
     services.style.opacity = 1;
     services.style.transform = 'translateY(0)';
+    // resetting landing section
+    ourWork.style.opacity = 0;
+    ourWork.style.transform = 'translateY(200px)';
   }
 
   if(window.pageYOffset >= footer.offsetTop - 800) {

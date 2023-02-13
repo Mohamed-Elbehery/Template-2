@@ -2,7 +2,7 @@
 :root {
   --primary-color: rgb(87, 114, 236);
   --secondary-color: rgb(71, 93, 194);
-  --shadow-color: var(--shadow-color);
+  --shadow-color: lightblue;
   --gray-color: #413f3f;
   --white-color: #fff;
   --section-padding-x: 4%;

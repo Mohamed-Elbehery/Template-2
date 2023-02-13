@@ -87,7 +87,7 @@ const darkModeChanges = () => {
     })
   });
   header.children[0].children[1].children[0].addEventListener('mouseenter', () => {
-    header.children[0].children[1].children[0].style.color = 'white';
+  header.children[0].children[1].children[0].style.color = 'white';
   })
 
   header.children[0].children[1].children[0].addEventListener('mouseleave', () => {

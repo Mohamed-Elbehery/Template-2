@@ -82,6 +82,7 @@ button {
 }
 /*! Main Styles */
 /* Header Styles */
+/*! Mohamed Moaaz */
 header {
   padding: var(--section-padding-y) var(--section-padding-x);
   position: fixed;
@@ -167,6 +168,7 @@ header .right-side .theme i:active {
 }
 
 /* Intro Styles */
+/*! Mohamed El-Behery */
 .intro {
   justify-content: space-around;
   opacity: 0;
@@ -243,9 +245,8 @@ header .right-side .theme i:active {
   height: 40px;
   margin-right: 1rem;
 }
-
-/*! Fatma */
 /* Services Styles */
+/*! Fatma Hazem */
 .caption-one {
   text-align: center;
   margin-top: 50px;

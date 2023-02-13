@@ -2,7 +2,9 @@
 :root {
   --primary-color: rgb(87, 114, 236);
   --secondary-color: rgb(71, 93, 194);
+  --shadow-color: var(--shadow-color);
   --gray-color: #413f3f;
+  --white-color: #fff;
   --section-padding-x: 4%;
   --section-padding-y: 1%;
   --section-transition-duration: 1.5s;
@@ -70,13 +72,13 @@ button {
 
 .btn-primary:hover {
   background-color: black;
-  color: white;
+  color: var(--white-color);
 }
 
 .btn-primary:active {
   background-color: var(--gray-color);
   border-color: var(--gray-color);
-  color: white;
+  color: var(--white-color);
 }
 /*! Main Styles */
 /* Header Styles */
@@ -100,7 +102,7 @@ header nav a h1:active {
 
 header nav button.btn:hover {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--white-color);
 }
 
 header nav button.btn:active {
@@ -284,39 +286,39 @@ header .right-side .theme i:active {
 .one img {
   width: 40%;
   margin-left: 40px;
-  border: 3px solid lightblue;
+  border: 3px solid var(--shadow-color);
   border-radius: 50%;
 }
 
 .one1 img {
-  border: 3px solid lightblue;
+  border: 3px solid var(--shadow-color);
   border-radius: 50%;
 }
 
 .two img {
   width: 60%;
   margin-top: 5px;
-  border: 3px solid lightblue;
+  border: 3px solid var(--shadow-color);
   border-radius: 50%;
 }
 
 .two2 img {
   width: 50%;
   margin-top: 5px;
-  border: 3px solid lightblue;
+  border: 3px solid var(--shadow-color);
   border-radius: 50%;
 }
 
 .three img {
   width: 75%;
   margin-top: 115px;
-  border: 3px solid lightblue;
+  border: 3px solid var(--shadow-color);
   border-radius: 50%;
 }
 
 .three3 img {
   margin-top: 115px;
-  border: 3px solid lightblue;
+  border: 3px solid var(--shadow-color);
   border-radius: 50%;
 }
 
@@ -371,12 +373,12 @@ footer h2 {
 .two2 img:hover,
 .three3 img:hover {
   border-radius: 50%;
-  box-shadow: 7px 8px 9px 4px lightblue;
+  box-shadow: 7px 8px 9px 4px var(--shadow-color);
 }
 /* Up Button */
 #up {
   position: fixed;
-  color: white;
+  color: var(--white-color);
   font-size: 1.5rem;
   background-color: var(--primary-color);
   bottom: 30px;

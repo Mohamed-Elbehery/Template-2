@@ -38,7 +38,7 @@ nav {
 }
 
 .section-styles {
-  height: 100vh;
+  min-height: 100vh;
   padding: 0 var(--section-padding-x);
   padding-bottom: 5rem;
   padding-top: 5rem;
@@ -243,10 +243,6 @@ header .right-side .theme i:active {
   height: 40px;
   margin-right: 1rem;
 }
-
-.our-work .image-container {
-  width: 50%;
-}
 /* Services Style */
 .services {
   display: flex;
@@ -280,7 +276,7 @@ header .right-side .theme i:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 10%;
+  width: 15%;
 }
 
 .services .services-content .left-imgs img,
@@ -353,4 +349,205 @@ footer .btns .btn:hover {
 
 #up:active {
   background-color: var(--primary-color);
+}
+
+/* Media Queries for Medium Screens (i have 2 screens so i made it to be satisfied :) */
+@media screen and (max-width: 1366px) {
+  .landing {
+    padding-bottom: 10rem;
+  }
+
+  .section-styles {
+    min-height: 130vh;
+  }
+
+  .intro .intro-content h3 {
+    width: 100%;
+  }
+
+  .intro .intro-content p {
+    width: 100%;
+  }
+
+  .intro .intro-content button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section-styles {
+    max-height: 20vh;
+  }
+
+  .landing {
+    flex-direction: column;
+    padding-top: 25%;
+  }
+
+  .landing .landing-content {
+    text-align: center;
+    width: 80%;
+  }
+
+  .landing .landing-content p {
+    width: 100%;
+  }
+
+  .landing .landing-img {
+    width: 50%;
+    height: 50%;
+    margin-top: 12%;
+  }
+
+  .landing .landing-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .intro {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+
+  .intro .intro-content {
+    width: 70%;
+    text-align: center;
+  }
+
+  .our-work {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .our-work .content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .our-work .content h3,
+  .our-work .content p {
+    width: 100%;
+  }
+
+  .our-work .img-container {
+    width: 75%;
+    height: 75%;
+  }
+
+  .our-work .img-container img {
+    width: 100%;
+  }
+
+  .our-work .content .icons {
+    display: none;
+  }
+
+  .services {
+    padding-top: 15%;
+    margin-bottom: 20%;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  .landing {
+    padding-top: 55%;
+  }
+
+  .landing .landing-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .landing .landing-content .btns {
+    margin-top: 2rem;
+  }
+
+  .landing .landing-img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .landing .landing-img img {
+    width: 100%;
+  }
+
+  .intro {
+    padding-top: 55%;
+  }
+
+  .intro .intro-content h3 {
+    font-size: 2rem;
+  }
+
+  .intro .intro-content p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .intro .intro-content .btn {
+    font-size: 0.8rem;
+  }
+
+  .intro .intro-img {
+    width: 85%;
+    height: 85%;
+  }
+
+  .intro .intro-img img {
+    width: 100%;
+  }
+
+  .our-work {
+    flex-direction: column;
+    padding-top: 55%;
+  }
+
+  .our-work .content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .our-work .content h3 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .our-work .content p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .our-work .img-container {
+    width: 85%;
+    height: 85%;
+  }
+
+  .our-work .img-container img {
+    width: 100%;
+  }
+
+  .our-work .content .icons {
+    display: none;
+  }
+
+  .services {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+
+  .services .title {
+    font-size: 0.9rem;
+  }
+
+  .services .counter span {
+    font-size: 2.5rem;
+  }
+
+  footer h2 {
+    font-size: 2rem;
+  }
+
+  footer .btns .btn {
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+  }
 }

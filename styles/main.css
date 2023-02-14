@@ -26,6 +26,7 @@ html {
 
 body {
   transition: var(--transition-duration);
+  overflow-x: hidden;
 }
 
 a {
@@ -396,4 +397,10 @@ footer h2 {
 
 #up:active {
   background-color: var(--primary-color);
+}
+
+@keyframes anyName {
+  0% {background-color: black;}
+  50% {background-color: #e0c;}
+  100% {background-color: rgb(54, 54, 236);}
 }

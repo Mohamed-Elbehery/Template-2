@@ -1,21 +1,26 @@
 //! Counter
-let counter = document.querySelector('.center')
+let counter = document.querySelector('.center');
 
+if(counter.innerHTML >= 10000000000000) {
+  counter.innerHTML = "Loading...";
+  counter.style.fontSize = '3rem';
+}
+
+// localStorage.clear();
 //! Saving the number to dispaly it after refreshing the page
 setInterval(() =>
 {
   if (!localStorage.counter)
   {
-    counter.innerHTML = 10000;
+    counter.innerHTML = 10000000000000;
     counter.innerHTML = +counter.innerHTML + 1;
-    localStorage.setItem('counter', counter.innerHTML);
+    localStorage.setItem('counter', +counter.innerHTML);
   } else
   {
     counter.innerHTML = +localStorage.counter + 1;
-    localStorage.setItem('counter', counter.innerHTML);
+    localStorage.setItem('counter', +counter.innerHTML);
   }
 }, 1000)
-
 //! Sections Animations
 const header = document.querySelector('header');
 const landingSection = document.querySelector('.landing');

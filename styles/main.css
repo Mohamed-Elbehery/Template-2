@@ -31,6 +31,7 @@ body {
 a {
   text-decoration: none;
   color: #000;
+  font-size: 1rem;
 }
 
 nav {
@@ -345,8 +346,8 @@ footer .content {
   height: 100px;
 }
 
-.account,
-.free {
+footer .account,
+footer .free {
   background-color: transparent;
   cursor: pointer;
   margin-top: 1.2rem;
